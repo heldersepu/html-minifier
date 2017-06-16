@@ -86,7 +86,7 @@
         @: this is normal text without html tag
     }
 </div>";
-        public static string GithubIssue24_1Result = @"<div> @if (true) { @: this is normal text without html tag
+        public static string GithubIssue24_1Result = @"<div> @if (true) { @: this is normal text without html tag 
 } </div>";
 
         public static string GithubIssue24_2 = @"<div>
@@ -97,7 +97,7 @@
 			break;
 	}
 </div>";
-        public static string GithubIssue24_2Result = @"<div> @switch (foo) { default: @: @Model.Name
+        public static string GithubIssue24_2Result = @"<div> @switch (foo) { default: @: @Model.Name 
 break; } </div>";
     }
 }

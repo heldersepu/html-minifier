@@ -55,6 +55,7 @@ namespace HtmlMinifier
             declarations.Add("@model ", true);
             declarations.Add("@using ", false);
             declarations.Add("@inherits ", false);
+            declarations.Add("@: ", false);
 
             // Loop through the declarations
             foreach (var declaration in declarations)
