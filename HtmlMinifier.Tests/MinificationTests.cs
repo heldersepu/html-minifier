@@ -213,5 +213,24 @@
             Assert.That(minifiedHtml, Is.EqualTo(expectedResult));
         }
 
+        [Test]
+        public void GithubIssue24_1_ShouldReturnCorrectly()
+        {
+            // Act
+            string minifiedHtml = StreamReaderExtension.MinifyHtmlCode(DataHelpers.GithubIssue24_1, noFeatures);
+
+            // Assert
+            Assert.That(minifiedHtml, Is.EqualTo(DataHelpers.GithubIssue24_1Result));
+        }
+
+        [Test]
+        public void GithubIssue24_2_ShouldReturnCorrectly()
+        {
+            // Act
+            string minifiedHtml = StreamReaderExtension.MinifyHtmlCode(DataHelpers.GithubIssue24_2, noFeatures);
+
+            // Assert
+            Assert.That(minifiedHtml, Is.EqualTo(DataHelpers.GithubIssue24_2Result));
+        }
     }
 }
