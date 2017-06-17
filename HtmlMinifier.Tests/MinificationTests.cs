@@ -232,5 +232,16 @@
             // Assert
             Assert.That(minifiedHtml, Is.EqualTo(DataHelpers.GithubIssue24_2Result));
         }
+
+        [Test]
+        public void BadHTML_ShouldReturnCorrectly()
+        {
+            string badHtml = "@model .";
+            // Act
+            string minifiedHtml = StreamReaderExtension.MinifyHtmlCode(badHtml, noFeatures);
+
+            // Assert
+            Assert.That(badHtml, Is.EqualTo(badHtml));
+        }
     }
 }
